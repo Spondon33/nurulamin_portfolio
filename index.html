@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon(1).ico"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dc7542538c.js" crossorigin="anonymous"></script>
+    <title>Nurul's Portfolio</title>
+</head>
+<body>
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <img src="nav_logo.png" alt="logo" class="logo">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Skills</a> </li>
+                <li><a href="#">Education</a> </li>
+                <li><a href="#">Courses</a> </li>
+                <li><a href="#">Projects</a> </li>
+                <li><a href="#">Contacts</a> </li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I am Nurul Amin <br> Khondoker</h1>
+
+        </div>
+    </div>
+</div>
+<!--About-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about_image.png" alt="about_image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="sub-title-txt">
+                    Hi, I’m Nurul Amin Khondoker, a passionate developer with
+                    a love for coding and problem-solving. I have a strong foundation
+                    in web and software development, with experience in creating both
+                    front-end and back-end solutions. Whether it's designing clean and
+                    interactive websites or building functional apps, I aim to make
+                    technology work seamlessly for users. With expertise in languages like
+                    Python, Java, C++, and JavaScript, I focus on delivering efficient,
+                    user-friendly products. I’m constantly exploring new tools and
+                    technologies to refine my skills and create innovative solutions.
+                    <br><br>
+                    Let’s connect and build something impactful together!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Skills-->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('hard-skills')">Hard Skills</p>
+            <p class="tab-links" onclick="opentab('soft-skills')">Soft Skills</p>
+        </div>
+        <div class="tab-contents active-tab" id="hard-skills">
+            <div class="row">
+                <div class="hard-skills-col-1">
+                    <ul>
+                        <li><span>Web Development</span><br>Proficiency in HTML, CSS,
+                            JavaScript, and Python for building dynamic websites.
+                            <p class="hidden-text">I have expertise in both front-end and
+                                back-end web development, creating dynamic, user-friendly
+                                websites. Using technologies like HTML, CSS, JavaScript,
+                                and Python, I build responsive designs and intuitive
+                                interfaces that adapt to various devices and enhance user
+                                experience. I also work with frameworks like Django and
+                                Flask to create interactive web applications that deliver
+                                functional, engaging content.</p>
+                        </li>
+                        <li><span>Software Development</span><br>Strong skills in
+                            programming with Python, Java, C++, and JavaScript.
+                            <p class="hidden-text">I have solid experience in developing
+                                software applications using languages like Python, Java,
+                                C++, and JavaScript. From building small utilities to
+                                complex systems, I focus on writing efficient, maintainable
+                                code while keeping performance and scalability in mind.
+                                I am well-versed in object-oriented programming and follow
+                                best practices for clean code and testing.</p>
+                        </li>
+                        <li><span>Mobile App Development</span><br>Experience in Android
+                            development using Java and cross-platform development frameworks.
+                            <p class="hidden-text">My skills extend to developing mobile
+                                applications, particularly for Android using Java. I design
+                                and build apps with a focus on functionality, usability, and
+                                a seamless user experience. I also have experience with
+                                cross-platform development frameworks like Flutter, enabling
+                                me to create apps that work across multiple platforms with a
+                                single codebase.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hard-skills-col-2">
+                    <ul>
+                        <li><span>Data Analysis & Machine Learning</span><br>Using Python
+                            and tools like Pandas, NumPy, and TensorFlow for data analysis
+                            and building models.
+                            <p class="hidden-text">I leverage Python libraries such as Pandas,
+                                NumPy, and Scikit-learn to perform detailed data analysis,
+                                uncover patterns, and generate insights from complex datasets.
+                                I also have experience applying machine learning techniques with
+                                tools like TensorFlow and Keras to build predictive models and
+                                enhance decision-making through data-driven insights.</p>
+                        </li>
+                        <li><span> Backend Development</span><br>Expertise in backend
+                            programming with Python frameworks like Django, Flask, and Java for
+                            server-side development.
+                            <p class="hidden-text">I specialize in backend development, building
+                                scalable and efficient server-side applications using frameworks
+                                like Django, Flask, and Java. I focus on designing robust APIs,
+                                managing databases, and ensuring high performance and security
+                                for web applications. My expertise includes working with databases
+                                like MySQL, PostgreSQL, and MongoDB to store and retrieve data
+                                efficiently.</p>
+                        </li>
+                        <li><span>Embedded Systems Programming</span><br>EUsing C/C++ for programming
+                            microcontrollers and IoT devices.
+                            <p class="hidden-text">I specialize in programming microcontrollers and
+                                embedded devices using C and C++, creating efficient, low-level
+                                software that interacts directly with hardware. My focus is on
+                                optimizing performance and ensuring reliable system functionality
+                                in resource-constrained environments.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tab-contents" id="soft-skills">
+            <div class="row">
+                <div class="soft-skills-col-1">
+                    <ul>
+                        <li><span>Problem Solving</span><br>Ability to tackle
+                            complex challenges and find effective solutions.
+                            <p class="hidden-text">I excel at breaking down complex challenges into
+                                smaller, manageable tasks and using logical and creative approaches
+                                to find effective solutions. My ability to quickly analyze issues
+                                and devise solutions ensures that projects stay on track and meet
+                                their objectives.</p>
+                        </li>
+                        <li><span>Creativity</span><br>Bringing innovative ideas to life through
+                            code and design.
+                            <p class="hidden-text">I bring a strong sense of creativity to every
+                                project, using my ability to think outside the box to design unique
+                                and engaging digital experiences. I continuously explore new ideas
+                                and innovative techniques to ensure that my work stands out and meets
+                                user needs in fresh ways.</p>
+                        </li>
+                        <li><span>Communication</span><br>Effectively sharing ideas and collaborating
+                            with others, both in writing and verbally.
+                            <p class="hidden-text">I believe in the power of clear communication to
+                                ensure that all stakeholders are aligned. Whether explaining technical
+                                concepts to non-technical clients or collaborating with team members,
+                                I make sure my ideas are understood and work towards finding solutions
+                                that meet everyone's needs.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="soft-skills-col-2">
+                    <ul>
+                        <li><span>Adaptability</span><br>
+                            Quickly learning new technologies and adjusting to changing environments.
+                            <p class="hidden-text">In the fast-paced tech world, I thrive by staying
+                                flexible and embracing new tools, programming languages, and methodologies.
+                                I quickly adapt to changing project requirements and am always open to
+                                learning new skills to enhance my capabilities and stay competitive.</p>
+                        </li>
+                        <li><span>Time Management</span><br>Efficiently handling multiple projects
+                            and meeting deadlines.
+                            <p class="hidden-text">I am skilled at managing my time effectively,
+                                balancing multiple tasks and deadlines while maintaining high-quality
+                                work. By prioritizing tasks based on urgency and importance, I ensure
+                                that all projects are completed on time without sacrificing attention
+                                to detail.</p>
+                        </li>
+                        <li><span>Self-Motivation</span><br>Driven to continuously improve
+                            skills and take on new challenges.
+                            <p class="hidden-text">I am driven by a passion for continuous learning
+                                and improvement. I set ambitious goals for myself, take initiative,
+                                and consistently push my boundaries to stay ahead in the tech field,
+                                delivering high-quality results without needing constant supervision.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Education-->
+<div id="education">
+    <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="row">
+            <table>
+                <tr>
+                    <td><span>BSc in Computer Studies and Engineering</span><br>American International
+                        University - Bangladesh <br> Current CGPA: 4.00 <br> 2024 - Present <br>
+                        <a href="https://www.aiub.edu/">Click here to visit AIUB</a>
+                    </td>
+                    <td><span>Higher Secondary Certificate</span><br> Akij Foundation School and College
+                        <br> GPA: 4.42 <br> 2021-2022<br>
+                        <a href="https://afsc.edu.bd/">Click here to visit Akij Foundation</a>
+                    </td>
+                    <td><span>Secondary School Certificate</span><br> Akij Foundation School and College
+                        <br> GPA: 4.89 <br> 2019-2020<br>
+                        <a href="https://afsc.edu.bd/">Click here to visit Akij Foundation</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!--Courses-->
+<div id="courses">
+    <div class="container">
+        <h1 class="sub-title">Courses</h1>
+        <div class="courses-list">
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>Machine Learning & AI with Python</h2>
+                <p>Harvard University</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>Full Stack Application Development Project</h2>
+                <p>IBM</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Analysis: Statistical Modelling & Computation in Applications</h2>
+                <p>MIT</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h2>IoT System Design: Software & Hardware Integration</h2>
+                <p>Waseda University</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>CS50's Web Programming with Python & Javascript</h2>
+                <p>Harvard University</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Backend Application Development with Node.js & Express</h2>
+                <p>IBM</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--Projects-->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="project1.jpg" alt="project-image">
+                <div class="layer">
+                    <h2>BMI Calculator</h2>
+                    <p>An advanced BMI Calculator that delivers accurate
+                        health metrics instantly, using a responsive interface
+                        built with HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/Spondon33/Spondon33.github.io"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="project-image">
+                <div class="layer">
+                    <h2>BTC Rate Analyzer</h2>
+                    <p>An accurate and efficient Bitcoin Converter designed to
+                        deliver real-time cryptocurrency exchange rates, providing
+                        users with precise BTC-to-fiat conversions through a
+                        streamlined interface.</p>
+                    <a href="https://github.com/Spondon33/Harvard_CS50_Python_Intro/blob/master/Problem%20Sets/Problem%20Set%204/bitcoin.py">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="project-image">
+                <div class="layer">
+                    <h2>Fuel Monitor</h2>
+                    <p>An advanced Fuel Gauge System designed to provide real-time,
+                        accurate fuel level monitoring, ensuring efficient fuel management
+                        and enhancing vehicle performance with reliable data insights.</p>
+                    <a href="https://github.com/Spondon33/Harvard_CS50_Python_Intro/blob/master/Problem%20Sets/Problem%20Set%203/fuel.py">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="project4.jpg" alt="project-image">
+                <div class="layer">
+                    <h2>Vehicle ID Checker</h2>
+                    <p>A reliable and efficient car number plate checker that verifies
+                        the validity of vehicle registration plates, ensuring accurate and
+                        secure identification with real-time data verification.</p>
+                    <a href="https://github.com/Spondon33/Harvard_CS50_Python_Intro/tree/master/Problem%20Sets/Problem%20Set%205/test_plates">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="project5.jpg" alt="project-image">
+                <div class="layer">
+                    <h2>Data Sorting System</h2>
+                    <p>An advanced data sorting system designed to efficiently organize and
+                        arrange large datasets with precision, enhancing data accessibility
+                        and streamlining workflow processes.</p>
+                    <a href="https://github.com/Spondon33/Harvard_CS50_Python_Intro/tree/master/Problem%20Sets/Problem%20Set%206/scourgify">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="project6.jpg" alt="project-image">
+                <div class="layer">
+                    <h2>The Probability Puzzle</h2>
+                    <p>An engaging game that challenges players to solve complex scenarios by
+                        applying probability principles, offering a fun and educational experience
+                        to test and improve logical thinking and decision-making skills.</p>
+                    <a href="https://github.com/Spondon33/Harvard_CS50_Python_Intro/blob/master/Problem%20Sets/Problem%20Set%204/game.py">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contacts</h1>
+                <p>nurulaminkh33@gmail.com</p>
+                <p>+8801312944845</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Spondon33"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/nurulaminkh33"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.facebook.com/nurulaminkh33"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/spondon_33/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

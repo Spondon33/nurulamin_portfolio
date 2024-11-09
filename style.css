@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #F0FFF0;
+}
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #66cc66;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+#scrollTopBtn:hover {
+    background-color: #4caf50;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("bg_image.png");
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 2px 2%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 250px;
+    margin: 10px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+}
+nav ul li a {
+    color: #66cc66;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #66cc66;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 15%;
+    font-size: 30px;
+    color: #006400;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 90px;
+}
+/*--- About ---*/
+#about{
+    padding: 80px 100px;
+    color: #006400;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 41%;
+}
+.about-col-1 img{
+    width: 100%;
+    border: 5px solid #66cc66;
+    border-radius: 35px;
+}
+.about-col-2{
+    flex-basis: 50%;
+}
+.sub-title{
+    margin-bottom: 25px;
+    font-size: 60px;
+    font-weight: 600;
+    color: #00b300;
+}
+.sub-title-txt{
+    padding: 20px 0 ;
+    font-size: 25px;
+}
+/*--- Skills ---*/
+#skills{
+    padding: 80px 100px;
+    color: darkgreen;
+}
+.tab-titles{
+    font-size: 35px;
+    padding: 40px 35%;
+}
+#skills ul{
+    list-style: none;
+}
+#skills ul li{
+    padding: 20px;
+    font-size: 24px;
+    width: 700px;
+    border: 5px solid #66cc66;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+#skills ul li .hidden-text {
+    display: none;
+    font-size: 18px;
+    color: #F0FFF0;
+    background: #66cc66;
+    margin-top: 10px;
+    width: 100%;
+}
+#skills ul li:hover{
+    background: #66cc66;
+    color: #F0FFF0;
+    transform: translateY(-10px) scale(1.2);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+#skills ul li:hover .hidden-text {
+    display: block;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#skills ul span{
+    font-size: 28px;
+    font-weight: bold;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    align-items: center;
+    margin-left: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: darkgreen;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.tab-contents.active-tab {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    position: relative;
+    z-index: 1;
+}
+/*--- Education ---*/
+#education{
+    padding: 80px 100px;
+    color: darkgreen;
+}
+#education table{
+    width: 100%;
+    margin: 100px 0 200px;
+    border-collapse: collapse;
+}
+#education table td{
+    font-size: 24px;
+    border: 3px solid #66cc66;
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px;
+    line-height: 2;
+}
+#education table td a{
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+#education table span{
+    font-size: 28px;
+    font-weight: bold;
+}
+#education table td:hover{
+    background: #66cc66;
+    transition: 0.5s;
+}
+/*--- Courses ---*/
+#courses{
+    padding: 80px 100px;
+    color: darkgreen;
+}
+.courses-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.courses-list div{
+    background: #66cc66;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 15px;
+    transition: background 0.5s, transform 0.5s;
+}
+.courses-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.courses-list div h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.courses-list div:hover{
+    background: #66cc66;
+    color: #F0FFF0;
+    transform: translateY(-10px) scale(1.02);
+}
+/*--- Projects ---*/
+#projects{
+    padding: 80px 100px;
+    color: darkgreen;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project{
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    color: #F0FFF0;
+}
+.project img{
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #66cc66);
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 20px;
+    transition: height 0.5s;
+}
+.layer h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #F0FFF0;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #66cc66;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    text-align: center;
+}
+.project:hover img{
+    transform: scale(1.2);
+}
+.project:hover .layer{
+    height: 100%;
+}
+/*--- Contact ---*/
+#contact{
+    padding: 80px 100px;
+    color: #006400;
+}
+#contact.contact-left img{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
