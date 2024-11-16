@@ -16,15 +16,17 @@
     <div class="container">
         <nav>
             <img src="nav_logo.png" alt="logo" class="logo">
-            <ul>
-                <li><a href="#">Home</a> </li>
-                <li><a href="#">About</a> </li>
-                <li><a href="#">Skills</a> </li>
-                <li><a href="#">Education</a> </li>
-                <li><a href="#">Courses</a> </li>
-                <li><a href="#">Projects</a> </li>
-                <li><a href="#">Contacts</a> </li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#skills">Skills</a> </li>
+                <li><a href="#education">Education</a> </li>
+                <li><a href="#courses">Courses</a> </li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#contact">Contacts</a> </li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <h1>Hi, I am Nurul Amin <br> Khondoker</h1>
@@ -205,7 +207,7 @@
         <div class="row">
             <table>
                 <tr>
-                    <td><span>BSc in Computer Studies and Engineering</span><br>American International
+                    <td><span>BSc in Computer Science and Engineering</span><br>American International
                         University - Bangladesh <br> Current CGPA: 4.00 <br> 2024 - Present <br>
                         <a href="https://www.aiub.edu/">Click here to visit AIUB</a>
                     </td>
@@ -231,31 +233,61 @@
                 <i class="fa-solid fa-gears"></i>
                 <h2>Machine Learning & AI with Python</h2>
                 <p>Harvard University</p>
+                <ul class="hidden-text">
+                    <li>Learn foundational concepts in machine learning and AI</li>
+                    <li>Explore Python libraries and frameworks for building machine learning models</li>
+                    <li>Understand algorithms for supervised and unsupervised learning</li>
+                </ul>
             </div>
             <div>
                 <i class="fa-solid fa-layer-group"></i>
                 <h2>Full Stack Application Development Project</h2>
                 <p>IBM</p>
+                <ul class="hidden-text">
+                    <li>Develop full-stack applications, covering both front-end and back-end technologies</li>
+                    <li>Gain hands-on experience with building web applications</li>
+                    <li>Learn to integrate databases, server-side logic, and front-end interfaces</li>
+                </ul>
             </div>
             <div>
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h2>Data Analysis: Statistical Modelling & Computation in Applications</h2>
                 <p>MIT</p>
+                <ul class="hidden-text">
+                    <li>Master statistical modeling and computation techniques</li>
+                    <li>Analyze data with a focus on real-world applications</li>
+                    <li>Learn tools for data analysis and model development in Python</li>
+                </ul>
             </div>
             <div>
                 <i class="fa-solid fa-computer"></i>
                 <h2>IoT System Design: Software & Hardware Integration</h2>
                 <p>Waseda University</p>
+                <ul class="hidden-text">
+                    <li>Explore the integration of hardware and software in Internet of Things (IoT) systems</li>
+                    <li>Learn to design IoT solutions, including sensors and actuators</li>
+                    <li>Gain experience in both the software and hardware aspects of IoT projects</li>
+                </ul>
             </div>
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>CS50's Web Programming with Python & Javascript</h2>
                 <p>Harvard University</p>
+                <ul class="hidden-text">
+                    <li>Learn web development using Python and JavaScript</li>
+                    <li>Gain expertise in HTML, CSS, and dynamic web applications</li>
+                    <li>Build practical web projects and understand the basics of web frameworks</li>
+                </ul>
             </div>
             <div>
                 <i class="fa-solid fa-laptop-code"></i>
                 <h2>Backend Application Development with Node.js & Express</h2>
                 <p>IBM</p>
+                <ul class="hidden-text">
+                    <li>Learn backend development with Node.js and Express.js</li>
+                    <li>Build server-side applications and APIs</li>
+                    <li>Work with databases and understand the full backend development lifecycle</li>
+                </ul>
             </div>
 
         </div>
@@ -342,18 +374,30 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contacts</h1>
-                <p>nurulaminkh33@gmail.com</p>
-                <p>+8801312944845</p>
+                <p><i class="fa-solid fa-envelope"></i>nurulaminkh33@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+8801312944845</p>
                 <div class="social-icons">
                     <a href="https://github.com/Spondon33"><i class="fa-brands fa-github"></i></a>
                     <a href="https://x.com/nurulaminkh33"><i class="fa-brands fa-square-x-twitter"></i></a>
                     <a href="https://www.facebook.com/nurulaminkh33"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.instagram.com/spondon_33/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
+                <a href="nurul_amin_cv.pdf" download class="btn btn2">Download CV</a>
             </div>
-            <div class="contact-right"></div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
         </div>
     </div>
+</div>
+<div class="copyright">
+    <p>Copyright © Nurul Amin. Crafted with Creativity and Passion. All Rights Reserved.</p>
 </div>
 <script src="script.js"></script>
 </body>
