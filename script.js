@@ -34,6 +34,21 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.right = "-200px";
 }
+
+// --- hide the logo ---
+const logo = document.querySelector('.logo');
+const nav = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        nav.classList.add('logo-hidden');
+    } else {
+        nav.classList.remove('logo-hidden');
+    }
+});
+
+
+
 // --- form submission ---
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxyLNHRQhSjXjRrk' +
     'zH2808vJi5Uowa7sHuixKm8SXzBuRp_1uXmtnBH3mocngo_-0WxSA/exec'

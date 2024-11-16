@@ -38,26 +38,75 @@ body{
 .container{
     padding: 2px 2%;
 }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(240, 255, 240, 0.8);
+    padding: 5px 20px;
+    height: 70px;
+    transition: all 0.3s ease;
+}
+nav.logo-hidden {
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+.menu li {
+    margin: 0 15px;
+}
+nav.logo-hidden .menu {
+    transform: translateX(-50%);
+    margin-left: 38%;
 }
 .logo{
     width: 250px;
-    margin: 10px;
+    margin: 8px;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+nav.logo-hidden .logo {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
 }
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 5px 20px;
+    padding-bottom: 20px;
+}
+.menu li a {
+    text-decoration: none;
+    color: #66cc66;
+    font-size: 24px;
+    transition: color 0.3s;
 }
 nav ul li a {
     color: #66cc66;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 24px;
     position: relative;
+    padding: 5px 0;
+    transition: color 0.3s;
 }
 nav ul li a::after{
     content: '';
@@ -72,6 +121,16 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+nav.logo-hidden ul {
+    justify-content: center;
+}
+
+nav ul {
+    flex: 1;
+    justify-content: flex-end;
+    transition: justify-content 0.3s ease;
+}
+
 .header-text{
     margin-top: 15%;
     font-size: 30px;
@@ -83,7 +142,7 @@ nav ul li a:hover::after{
 }
 /*--- About ---*/
 #about{
-    padding: 80px 100px;
+    padding: 200px 100px;
     color: #006400;
 }
 .row{
