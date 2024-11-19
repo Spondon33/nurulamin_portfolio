@@ -48,7 +48,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-
 // --- form submission ---
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxyLNHRQhSjXjRrk' +
     'zH2808vJi5Uowa7sHuixKm8SXzBuRp_1uXmtnBH3mocngo_-0WxSA/exec'
