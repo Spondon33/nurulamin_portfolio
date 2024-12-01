@@ -159,6 +159,22 @@ nav ul {
     padding: 20px 0 ;
     font-size: 25px;
 }
+#intro-video p{
+    text-align: left;
+    font-size: 50px;
+    padding-bottom: 3%;
+    padding-left: 2%;
+    color: #4caf50;
+}
+#intro-video {
+    text-align: center;
+    padding: 100px 10% 0 10%;
+}
+#intro-video video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 /*--- Skills ---*/
 #skills{
     padding: 80px 100px;
@@ -590,6 +606,13 @@ nav .fa-solid{
     }
     .about-col-1{
         margin-bottom: 30px;
+    }
+    #intro-video{
+        padding: 25px 3px 25px 3px;
+    }
+    #intro-video p{
+        font-size: 35px;
+
     }
     #skills{
         padding: 40px 20px 0 20px;
